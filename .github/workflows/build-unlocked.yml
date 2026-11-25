@@ -1048,8 +1048,8 @@ jobs:
 
           # Tauri does not sign the APKs itself; upstream signs them explicitly
           # and so does this workflow, because the updater verifies them.
-          (cd apps/readest-app && pnpm tauri signer sign "../../$apk")
-          upload "$apk" "$apk.sig"
+          # (cd apps/readest-app && pnpm tauri signer sign "../../$apk")
+          # upload "$apk" "$apk.sig"
 
   # ---------------------------------------------------------------------------
   # iOS: one unsigned, arm64-only IPA. No Apple certificate is configured for
